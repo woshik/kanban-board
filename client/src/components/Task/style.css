@@ -1,0 +1,7 @@
+.card[draggable] {
+    cursor: grabbing;
+}
+
+.card[draggable].dragging {
+    opacity: .5;
+}
