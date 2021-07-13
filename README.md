@@ -8,4 +8,6 @@ Kanban board for simple task management.
 - mongodb (v4.2.8)
 - React (v17.0.2)
 
-## Setup process mention in readme file on server and client directory 
+## Setup process mention in readme file on server and client directory
+
+### [Live Demo](http://18.209.226.53:5000/)
