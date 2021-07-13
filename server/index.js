@@ -8,7 +8,6 @@ if (cluster.isMaster) {
   const isProduction = process.env.NODE_ENV === 'production';
 
   const cpuNum = isProduction ? require('os').cpus().length : 1;
-  console.log(cpuNum);
 
   for (let i = 0; i < cpuNum; i += 1) {
     cluster.fork();
