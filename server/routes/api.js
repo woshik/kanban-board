@@ -8,7 +8,7 @@ module.exports = {
   getWorkflow: {
     url: '/workflow',
     method: 'get',
-    controller: 'workflow',
+    controller: 'workFlow',
     function: 'retrieve',
   },
   createWorkFlow: {
