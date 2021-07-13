@@ -3,11 +3,12 @@ const cluster = require('cluster');
 
 // multi core clustering only apply on production server
 if (cluster.isMaster) {
+  require('dotenv').config();
+
   const isProduction = process.env.NODE_ENV === 'production';
 
-  require('dotenv').config({ debug: isProduction });
-
   const cpuNum = isProduction ? require('os').cpus().length : 1;
+  console.log(cpuNum);
 
   for (let i = 0; i < cpuNum; i += 1) {
     cluster.fork();

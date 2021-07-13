@@ -26,8 +26,6 @@ process.on('unhandledRejection', (error) => {
     label: 'unhandledRejection',
     message: error.stack,
   });
-
-  process.exit(1);
 });
 
 if (isProduction && fs.existsSync(__dirname, '../client/build')) {
